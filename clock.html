@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="clock.css">
+  <title>Current time</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="clock">
+      <div class="hour">
+        <div class="hr" id = "hr"></div>
+      </div>
+      <div class="min">
+        <div class="mn" id = "mn"></div>
+      </div>
+      <div class="sec">
+        <div class="ss" id = "ss"></div>
+      </div>
+    </div>
+    <div class="SelectWrapper">
+      <select id="Select">
+        <option  value="0" selected>Hanoi - Jakarta - GMT + 7.00</option>
+        <option  value="1">Afghanistan - Kabul - GMT + 4.30</option>
+        <option  value="2">Albania - Tirane - GMT + 1.00</option>
+        <option  value="3">Algeria - Algiers - GMT + 1.00</option>
+        <option  value="4">Antigue and Barbuda - Saint John's - GMT + 4.00</option>
+      </select>
+      <button onclick="getTZ()" id="button">Đổi múi giờ</button>
+    </div>
+
+  </div>
+  <script src="clock.js"></script> 
+</body>
+</html>
